@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<script src="https://kit.fontawesome.com/176b62e972.js" crossorigin="anonymous"></script>
+		<title>Etch A Sketch</title>
+	</head>
+	<body>
+		<div class="tooltip">
+			<i class="fas fa-info-circle"></i>
+			<a href="https://github.com/daniel-ulises" target="_blank" rel="noopener noreferrer"
+				><i class="fab fa-github"></i
+			></a>
+		</div>
+		<div class="modal-outer">
+			<div class="modal-inner">
+				<h2>Welcome to Etch-A-Sketch!</h2>
+				<p>This is a simple imlpementation of the Etch-A-Sketch! using Canvas.</p>
+				<p>Draw by moving your arrow keys, it's as simple as that! Have fun!</p>
+				<button class="start">Let's draw!</button>
+			</div>
+		</div>
+		<div class="container">
+			<div class="canvas-container">
+				<h2>Etch A Sketch!</h2>
+				<canvas height="400" width="800" id="canvas"></canvas>
+				<div class="etchbuttons">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

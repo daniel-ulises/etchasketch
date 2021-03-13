@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+	background: url("../img/toystore.jpg") no-repeat center center / cover;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: #dadada;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.canvas-container {
+	width: 900px;
+	background-color: #a72828;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.canvas-container > h2 {
+	padding: 1rem;
+	color: #fff;
+}
+
+.etchbuttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+}
+
+.etchbuttons > div {
+	height: 5rem;
+	width: 5rem;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0.5rem;
+}
+
+.etchbuttons > .restart {
+	padding: 0.5rem 2rem;
+	background-color: #fff;
+	border: 0;
+	border-radius: 5px;
+}
+
+canvas {
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.modal-outer {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal-inner {
+	color: #333;
+	background-color: #dadada;
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 3rem 5rem;
+	border-radius: 10px;
+}
+
+.start {
+	padding: 0.5rem 2rem;
+	background-color: #333;
+	color: #fff;
+	border: 1px solid #dadada;
+	border-radius: 10px;
+}
+
+.fade-in {
+	opacity: 1;
+	transition: 0.5s ease;
+	pointer-events: all;
+}
+
+.fade-out {
+	opacity: 0;
+	transition: 0.5s ease;
+	pointer-events: none;
+}
+
+.tooltip {
+	position: absolute;
+	color: #333;
+	font-size: 1.5rem;
+	top: 10px;
+	left: 10px;
+	width: 4rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tooltip i {
+	color: #fff;
+	text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.623);
+	cursor: pointer;
+}
